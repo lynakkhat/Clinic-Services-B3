@@ -1,3 +1,7 @@
+@import "./components/variable";
+@import "./mixins/group-mixin";
+@import "./components/nav";
+
 * {
     margin: 0;
     padding: 0;

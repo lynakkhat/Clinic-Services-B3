@@ -1,0 +1,10 @@
+@mixin centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-header {
+    font-family: sans-serif;
+    font-size: 25px;
+}
