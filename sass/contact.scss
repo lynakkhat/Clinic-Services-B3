@@ -1,1 +1,95 @@
 @import "./main.scss";
+
+main {
+    .text{
+        @include centered;
+        @include text-header;
+        background: $main-color;
+        width: 100%;
+        height: 50vh;
+        color:$sub-color3 ;
+        text-align: center;
+    }
+    .contact{
+        @include text-header;
+        width: 100%;
+        height: 70vh;
+        color:$sub-color4 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .row {
+            @include centered;
+            margin: 10px;
+            gap: 10px;
+            label{
+               font-size: $font-size ;
+            }
+            input {
+                padding: 12px;
+                width: 100%;
+                border-radius: 1000px;
+                background:gainsboro ;
+                border: none;
+            }
+        }
+        .row1{
+            margin-top: 15px;
+            input {
+                padding: 10px;
+                width: 100%;
+                border-radius: 1000px;
+            }
+        }
+        .btn{
+            padding: 10px;
+            width: 90%;
+            border-radius: 1000px;
+            color:$sub-color3 ;
+            background:$main-color;
+            border: none;
+        }
+        
+
+    }
+}
+aside{
+    display: flex;
+    justify-content: space-around;
+    background:gainsboro;
+    width: 100%;
+    height: 30vh;
+    .svar{
+        .icon{
+            // border: solid;
+            border-radius: 100% ;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            color: $sub-color3;
+            background:$main-color;
+            padding: 10px;
+            margin-bottom: 20px;
+       
+        }
+    }
+
+}
+.page{
+    background:$main-color;
+    width: 100%;
+    height: 12vh;
+}
+.page1{
+    @include text-header;
+    @include centered;
+    background: red;
+    width: 100%;
+    height: 30vh;
+    
+   
+}
+header{
+    @include text-header;
+}
