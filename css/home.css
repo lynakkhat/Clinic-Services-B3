@@ -12,12 +12,6 @@ nav ul {
   display: flex;
   align-items: center;
 }
-nav ul li .active-link:hover {
-  border: solid 2px #008677;
-  border-radius: 5px;
-  padding: 8px;
-  color: #008677;
-}
 nav ul li .active-link {
   border: solid 2px #008677;
   border-radius: 5px;
