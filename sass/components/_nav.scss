@@ -11,28 +11,36 @@ nav {
     ul {
         display: flex;
         align-items: center;
-        
+        padding: 0px 30px;
+
         li .active-link {
             border: solid 2px $main-color;
-            border-radius: 5px;
-            padding: 8px;
+            padding: 3px;
             color: $main-color;
+        }
+        
+        li a:hover {
+            border: solid 1px $main-color;
+            padding: 5px;
+            background: $main-color;
+            color: white;
         }
 
         li a {
-            padding: 0px 20px;
+            padding: 0px 30px;
             font-family: "Poppins", sans-serif;
             color: $main-color;
             font-size: $font-size;
             cursor: pointer;
+            text-transform: uppercase;
         }
 
         .apm a {
             border: solid 2px $main-color;
-            border-radius: 5px;
             background: $main-color;
-            padding: 8px;
+            padding: 5px;
             color: $sub-color3;
+            margin-left: 10px;
         }
     }
 }
