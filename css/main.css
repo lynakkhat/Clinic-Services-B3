@@ -11,26 +11,27 @@ nav img {
 nav ul {
   display: flex;
   align-items: center;
+  padding: 0px 30px;
 }
 nav ul li .active-link {
-  border: solid 2px #008677;
-  border-radius: 5px;
-  padding: 8px;
-  color: #008677;
+  border: solid 2px #01B2B7;
+  padding: 5px;
+  color: #01B2B7;
 }
 nav ul li a {
   padding: 0px 20px;
   font-family: "Poppins", sans-serif;
-  color: #008677;
+  color: #01B2B7;
   font-size: 18px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 nav ul .apm a {
-  border: solid 2px #008677;
-  border-radius: 5px;
-  background: #008677;
-  padding: 8px;
+  border: solid 2px #01B2B7;
+  background: #01B2B7;
+  padding: 5px;
   color: #FFFFFF;
+  margin-left: 10px;
 }
 
 * {
