@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #FFFFFF;
 }
 nav img {
@@ -9,8 +13,12 @@ nav img {
   margin: 0px 30px;
 }
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul li .active-link {
   border: solid 2px #008677;
@@ -36,7 +44,76 @@ nav ul .apm a {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+}
+
+.services {
+  width: 100%;
+  height: 50vh;
+  background: #008677;
+  margin-top: 10px;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+.services h1 {
+  position: relative;
+  top: 58px;
+}
+.services h3 {
+  position: relative;
+  top: 58px;
+}
+
+.text-services {
+  width: 100%;
+  height: 40vh;
+  background: #FFFFFF;
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+.text-services h2 {
+  margin-top: 80px;
+}
+
+.box-service {
+  width: 100%;
+  height: 300vh;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.box-service .box-of-servie {
+  width: 28%;
+  height: 74vh;
+  background: #E8F4F3;
+  margin: auto;
+  margin-top: 70px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+.box-service .box-of-servie img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 34vh;
+}
+.box-service .box-of-servie p {
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
