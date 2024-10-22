@@ -1,3 +1,44 @@
+@import "../components/variable";
+
 nav {
-    @include centered;
+    display: flex;
+    justify-content: space-between;
+    background: $sub-color3;
+    img {
+        width: 70px;
+        margin: 0px 30px;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        li .active-link:hover{
+            border: solid 2px $main-color;
+            border-radius: 5px;
+            padding: 8px;
+            color: $main-color;
+        }
+
+        li .active-link {
+            border: solid 2px $main-color;
+            border-radius: 5px;
+            padding: 8px;
+            color: $main-color;
+        }
+
+        li a {
+            padding: 0px 20px;
+            font-family: "Poppins", sans-serif;
+            color: $main-color;
+            font-size: $font-size;
+            cursor: pointer;
+        }
+
+        .apm a {
+            border: solid 2px $main-color;
+            border-radius: 5px;
+            background: $main-color;
+            padding: 8px;
+            color: $sub-color3;
+        }
+    }
 }
