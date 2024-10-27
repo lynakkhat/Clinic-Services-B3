@@ -1,9 +1,134 @@
 @import "./main.scss";
 
 main {
-    background-image: url(https://i.pinimg.com/564x/d9/41/0b/d9410b0e495e873d4b06d6e27e74a22c.jpg);
+    background-image: url(https://i.pinimg.com/564x/75/99/e2/7599e20a079c876a76bb98638bae940b.jpg);
     background-size: cover;
     background-position: center;
     height: 80vh;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        .btn {
+            margin: auto;
+            padding: 0px 90px; 
+            h2 {
+                font-family: $font-family;
+                padding: 20px 0px;
+            }
+            h1 {
+                font-size: 40px;
+                font-family: $font-family;
+            }
+            p {
+                font-size: 20px;
+                padding: 20px 0px;
+            }
+        .bt {
+            margin-top: 70px;
+            .bt1 {
+                width: 220px;
+                padding: 18px;
+                border: none;
+                border-radius: 5px;
+                color: $sub-color3;
+                background: $main-color;
+                font-size: $font-size;
+                cursor: pointer;
+            }
+
+            .bt1:hover {
+                background: $sub-color3;
+                color: $main-color;
+            }
+            .bt2 {
+                width: 220px;
+                padding: 18px;
+                margin-left: 28px;
+                background: none;
+                border: solid 2px $main-color;
+                border-radius: 5px;
+                color: $sub-color3;
+                font-size: $font-size;
+            }
+            .bt2:hover {
+                background: $sub-color3;
+                border: solid 2px $sub-color3;
+                color: $main-color;
+            }
+        }
+        }
+        .small img {
+            margin-top: 125px;
+        }
+    }
 }
 
+.bg {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+
+    .text {
+        width: 40%;
+        margin-top: 100px;
+        h1 {
+            font-size: $text-header;
+            font-family: $font-family;
+        }
+        p {
+            font-size: 28px;
+            font-family: $font-family;
+            margin-top: 38px;
+        }
+    }
+
+    .pic {
+        background-image: url(https://lh3.googleusercontent.com/p/AF1QipMWXWHMGWhDy_zvqA5pwIFmxUl7dIxI0StL0fud=s1360-w1360-h1020);
+        background-position: center;
+        width: 50%;
+        height: 100vh;
+        .logo {
+            @include centered;
+            img {
+                width: 35%;
+                padding: 30% 0 0 0;
+            }
+        }
+    }
+
+    .year {
+        @include centered;
+        margin-top: 140px;
+        .card {
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+            background: $main-color;
+            font-family: $font-family;
+            color: $sub-color3;
+            border-radius: 10px;
+            h1 {
+                font-size: 100px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.group-card {
+    @include centered;
+    .card {
+        width: 30%;
+        color: $sub-color3;
+    }
+
+    .card1 {
+        background: $main-color;
+    }
+
+    .card2 {
+        background: teal;
+    }
+}

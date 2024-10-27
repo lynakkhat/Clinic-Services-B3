@@ -1,56 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #FFFFFF;
-}
-nav img {
-  width: 70px;
-  margin: 0px 30px;
-}
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
-  padding: 0px 30px;
-}
-nav ul li .active-link {
-  border: solid 2px #01B2B7;
+  justify-content: space-between;
   padding: 3px;
-  color: #01B2B7;
-}
-nav ul li a:hover {
-  border: solid 1px #01B2B7;
-  padding: 5px;
-  background: #01B2B7;
-  color: white;
-}
-nav ul li a {
-  padding: 0px 30px;
+  background-color: #f8f9fa;
   font-family: "Poppins", sans-serif;
-  color: #01B2B7;
+}
+nav .nav-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-top .nav-left img {
+  height: 60px;
+  width: auto;
+}
+nav .nav-top .nav-center {
+  flex-grow: 1;
+  text-align: center;
+}
+nav .nav-top .nav-center .nav-center-dafualt {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+nav .nav-top .nav-center .nav-center-dafualt li {
+  display: inline-block;
+  text-decoration: none;
   font-size: 18px;
+  color: #333;
+  padding: 10px;
+}
+nav .nav-top .nav-center .nav-center-dafualt li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  color: #01B2B7;
+  text-transform: uppercase;
   cursor: pointer;
+}
+nav .nav-top .nav-center .nav-center-dafualt li a:hover {
+  color: white;
+  background: #01B2B7;
+}
+nav .nav-top .nav-righ {
+  display: flex;
+  align-items: center;
+}
+nav .nav-top .nav-righ .nav-desk {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .nav-top .nav-righ .nav-desk .material-symbols-outlined {
+  color: #01B2B7;
+}
+nav .nav-top .nav-righ .nav-desk a {
+  text-decoration: none;
+  color: white;
   text-transform: uppercase;
 }
-nav ul .apm a {
-  border: solid 2px #01B2B7;
+
+.nav-center-dafualt a.active-link {
+  border-bottom: 2px solid #01B2B7;
+}
+
+.nav-desk ul .apm a {
+  text-decoration: none;
   background: #01B2B7;
-  padding: 5px;
-  color: #FFFFFF;
-  margin-left: 10px;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.nav-desk ul .apm a:hover {
+  background: rgba(0, 128, 128, 0.955);
 }
 
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
@@ -61,7 +100,8 @@ main .text {
   align-items: center;
   font-family: sans-serif;
   font-size: 25px;
-  background: #008677;
+  text-align: center;
+  background: #01B2B7;
   width: 100%;
   height: 50vh;
   color: #FFFFFF;
@@ -70,9 +110,10 @@ main .text {
 main .contact {
   font-family: sans-serif;
   font-size: 25px;
+  text-align: center;
   width: 100%;
   height: 70vh;
-  color: #000;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,7 +149,7 @@ main .contact .btn {
   width: 90%;
   border-radius: 1000px;
   color: #FFFFFF;
-  background: #008677;
+  background: #01B2B7;
   border: none;
 }
 
@@ -125,13 +166,13 @@ aside .svar .icon {
   height: 50px;
   text-align: center;
   color: #FFFFFF;
-  background: #008677;
+  background: #01B2B7;
   padding: 10px;
   margin-bottom: 20px;
 }
 
 .page {
-  background: #008677;
+  background: #01B2B7;
   width: 100%;
   height: 12vh;
 }
@@ -139,6 +180,7 @@ aside .svar .icon {
 .page1 {
   font-family: sans-serif;
   font-size: 25px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,4 +192,5 @@ aside .svar .icon {
 header {
   font-family: sans-serif;
   font-size: 25px;
-}/*# sourceMappingURL=contact.css.map */
+  text-align: center;
+}
