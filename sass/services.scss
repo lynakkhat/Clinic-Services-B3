@@ -6,14 +6,7 @@
     margin-top: 10px;
     color: $sub-color3;
     @include text-header;
-    h1{
-        position: relative;
-        top: 58px;
-    }
-    h3{
-        position: relative;
-        top: 58px;
-    }
+    @include centered ;
 }
 .text-services{
     width: 100%;
@@ -24,31 +17,59 @@
         margin-top: 80px;
     }
 }
-.box-service{
-    width: 100%;
-    height: 300vh;
-    background:$sub-color3;
+span #Service{
+    color:black;
+    font-size:30px;
+    font-family: $font-family;
+    margin-left: 80px;
+}
+.card-service1{
     @include centered;
+    width: 100%;
     flex-wrap: wrap;
-    .box-of-servie{
-        width:28%;
-        height: 74vh;
-        background:$bg-card;
-        margin:auto;
-        margin-top: 70px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        border-radius: 10px;
+    margin-top: 20px;
+    .card-of-service{
+        width: 28%;
+        height: 80vh;
+        background: $sub-color3;
+        margin: 10px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
         img{
-            border-radius: 10px 10px 0px 0px;
             width: 100%;
-            height: 34vh;
+            height: 40vh;
+        }
+        h2{
+            font-size: 20px;
+            text-align: center;
+            font-family: $font-family;
+            margin-top: 20px;
+        }
+        span a{
+            color: $sub-color3;
+            background:#395BA9;
+            padding: 12px 20px ;
+            position: relative;
+            top: 10%;
+            left: 30%;
+            border: none;
+            border-radius: 10px;
         }
         p{
-            color: $sub-color2;
+            font-size: 16px;
             font-family: $font-family;
-            font-size: $font-size1;
         }
-
     }
-    
+}
+.contant-service{
+    @include centered;
+    width: 100%;
+    height: 90vh;
+    background:$main-color;
+    .text-contant-service{
+        color: $sub-color3;
+        font-family: $font-family;
+        h1{
+            font-size: 50px;
+        }
+    }
 }
