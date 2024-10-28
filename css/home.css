@@ -86,6 +86,52 @@ nav .nav-top .nav-righ .nav-desk a {
   background: rgba(0, 128, 128, 0.955);
 }
 
+section {
+  display: flex;
+  justify-content: space-around;
+  background: #01B2B7;
+  width: 100%;
+  height: 30vh;
+}
+section .text3 .iconr-footer {
+  display: flex;
+  margin: 12px;
+}
+section .text3 .iconr-footer p {
+  color: #FFFFFF;
+}
+section .text3 .iconr-footer span {
+  color: #FFFFFF;
+}
+section .text1 {
+  margin-top: 12px;
+}
+section .text1 h3 {
+  color: #FFFFFF;
+}
+section .text2 {
+  margin-top: 12px;
+}
+section .text2 h3 {
+  color: #FFFFFF;
+}
+section .text4 {
+  display: flex;
+  justify-content: space-around;
+  background: #01B2B7;
+}
+section .text4 .text-icon {
+  display: flex;
+  margin: 24px;
+}
+section .text4 .text-icon img {
+  width: 30px;
+  height: 30px;
+}
+section .text4 .text-icon p {
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,9 +145,6 @@ main {
   background-size: cover;
   background-position: center;
   height: 80vh;
-<<<<<<< HEAD
-}/*# sourceMappingURL=home.css.map */
-=======
 }
 main .content {
   display: flex;
@@ -267,5 +310,4 @@ span a {
   padding: 10px 20px;
   background: #E8F4F3;
   color: #395BA9;
-}
->>>>>>> 6949428fd22c40abd74564a80a11e15cb1f73c6a
+}/*# sourceMappingURL=home.css.map */
