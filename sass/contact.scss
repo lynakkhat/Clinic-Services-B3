@@ -1,23 +1,24 @@
 @import "./main.scss";
-
+@import"./components/card";
+@import"./mixins/responsive";
 main {
     .text{
         @include centered;
         @include text-header;
-        background: $main-color;
+        background-image: url(https://media.istockphoto.com/id/863348696/photo/doctor-is-checking-a-patient.jpg?s=612x612&w=0&k=20&c=AzEN5lBPCNB6lTreli7TC9MfkexTGOpzwg-YbS7QPm4=);
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
-        height: 50vh;
-        color:$sub-color3 ;
+        height: 90vh;
+        color:#15063F ;
         text-align: center;
     }
     .contact{
+        @include centered;
         @include text-header;
         width: 100%;
         height: 70vh;
-        color:$sub-color4 ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        color: #000 ;
         text-align: center;
         .row {
             @include centered;
@@ -49,9 +50,7 @@ main {
             color:$sub-color3 ;
             background:$main-color;
             border: none;
-        }
-        
-
+        }  
     }
 }
 aside{
@@ -62,7 +61,6 @@ aside{
     height: 30vh;
     .svar{
         .icon{
-            // border: solid;
             border-radius: 100% ;
             width: 50px;
             height: 50px;
@@ -84,12 +82,55 @@ aside{
 .page1{
     @include text-header;
     @include centered;
-    background: red;
     width: 100%;
-    height: 30vh;
-    
-   
+    height: 30vh;   
 }
-header{
+.medim{
+    @include centered;
     @include text-header;
+    color: #000 ;
+    width: 100%;
+    height: 20vh;
 }
+.map{
+    iframe{
+        width: 100%;
+        margin-top: 12px;
+    }
+}
+// section{
+//     display: flex;
+//     justify-content: space-around;
+//     background: $main-color;
+//     width: 100%;
+//     height: 30vh;
+//     .text3 {
+//        .iconr-footer{
+//         display: flex;
+//         margin: 12px;
+//         p{
+//             color: $sub-color3;
+//         }
+//         span{
+//             color: $sub-color3;
+//         }
+        
+//        }
+
+//     }
+//     .text1{
+//         margin-top: 12px;
+//         h3{
+//             color: $sub-color3;
+//         }
+//     }
+   
+//     .text2{
+//         margin-top: 12px;
+//         h3{
+//             color: $sub-color3;
+//         }
+//     }
+   
+// }
+
