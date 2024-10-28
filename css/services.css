@@ -3,40 +3,48 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  align-items: center;
-  justify-content: space-between;
-  padding: 3px;
-  background-color: #f8f9fa;
-  font-family: "Roboto", sans-serif;
-=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #FFFFFF;
->>>>>>> lymeng
+  padding: 3px;
+  background-color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
 }
 nav .nav-top {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-<<<<<<< HEAD
 nav .nav-top .nav-left img {
   height: 60px;
   width: auto;
 }
 nav .nav-top .nav-center {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: center;
 }
 nav .nav-top .nav-center .nav-center-dafualt {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
   width: 100%;
 }
@@ -60,22 +68,20 @@ nav .nav-top .nav-center .nav-center-dafualt li a:hover {
   background: #01B2B7;
 }
 nav .nav-top .nav-righ {
-  display: flex;
-  align-items: center;
-=======
-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 30px;
->>>>>>> lymeng
 }
 nav .nav-top .nav-righ .nav-desk {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 15px;
   list-style: none;
   margin: 0;
@@ -149,7 +155,7 @@ nav .nav-top .nav-righ .nav-desk a {
 span #Service {
   color: black;
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-left: 80px;
 }
 
@@ -169,7 +175,7 @@ span #Service {
   margin-top: 20px;
 }
 .card-service1 .card-of-service {
-  width: 28%;
+  width: 26%;
   height: 80vh;
   background: #FFFFFF;
   margin: 10px;
@@ -182,13 +188,14 @@ span #Service {
 }
 .card-service1 .card-of-service h2 {
   font-size: 20px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
   margin-top: 20px;
 }
 .card-service1 .card-of-service span a {
   color: #FFFFFF;
   background: #395BA9;
+  font-family: "Roboto", sans-serif;
   padding: 12px 20px;
   position: relative;
   top: 10%;
@@ -196,20 +203,13 @@ span #Service {
   border: none;
   border-radius: 10px;
 }
-<<<<<<< HEAD
-.box-service .box-of-servie img {
-  border-radius: 10px 10px 0px 0px;
-  width: 100%;
-  height: 34vh;
-}
-.box-service .box-of-servie p {
-  color: #808080;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-=======
 .card-service1 .card-of-service p {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 96%;
 }
 
 .contant-service {
@@ -228,9 +228,24 @@ span #Service {
 }
 .contant-service .text-contant-service {
   color: #FFFFFF;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
 }
 .contant-service .text-contant-service h1 {
-  font-size: 50px;
->>>>>>> lymeng
+  font-size: 70px;
+}
+.contant-service .text-contant-service p {
+  padding: 30px 0px;
+}
+.contant-service .text-contant-service span #Contant {
+  color: #FFFFFF;
+  border: solid 2px white;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-top: 40px;
+}
+.contant-service .img-contant-service img {
+  width: 100%;
+  height: 84vh;
+  margin-top: 40px;
 }

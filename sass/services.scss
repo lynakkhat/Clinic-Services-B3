@@ -29,7 +29,7 @@ span #Service{
     flex-wrap: wrap;
     margin-top: 20px;
     .card-of-service{
-        width: 28%;
+        width: 26%;
         height: 80vh;
         background: $sub-color3;
         margin: 10px;
@@ -40,13 +40,15 @@ span #Service{
         }
         h2{
             font-size: 20px;
-            text-align: center;
+            // text-align: center;
+            margin-left: 10px;
             font-family: $font-family;
             margin-top: 20px;
         }
         span a{
             color: $sub-color3;
             background:#395BA9;
+            font-family: $font-family;
             padding: 12px 20px ;
             position: relative;
             top: 10%;
@@ -57,6 +59,10 @@ span #Service{
         p{
             font-size: 16px;
             font-family: $font-family;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            width: 96%;
         }
     }
 }
@@ -67,9 +73,25 @@ span #Service{
     background:$main-color;
     .text-contant-service{
         color: $sub-color3;
-        font-family: $font-family;
+        font-family:$font-family;
+        margin-left: 20px;
         h1{
-            font-size: 50px;
+            font-size: $text-header;
         }
+        p{
+            padding: 30px 0px;
+        }
+        span #Contant{
+            color: $sub-color3;
+            border: solid 2px white;
+            border-radius: 10px;
+            padding: 12px 20px ;
+            margin-top: 40px;
+        }
+    }
+    .img-contant-service img{
+       width: 100%;
+       height: 84vh;
+       margin-top: 40px;
     }
 }
