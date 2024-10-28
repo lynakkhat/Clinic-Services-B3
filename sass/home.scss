@@ -119,16 +119,55 @@ main {
 
 .group-card {
     @include centered;
+    margin-top: 150px;
     .card {
-        width: 30%;
+        width: 25%;
+        height: 40vh;
+        padding: 48px 32px;
         color: $sub-color3;
+        font-family: $font-family;
+
+        p {
+            padding: 30px 0px;
+        }
     }
 
     .card1 {
-        background: $main-color;
+        background: #3EC4C8;
     }
 
     .card2 {
-        background: teal;
+        background: $main-color;
+    }
+
+    .card3 {
+        background: #395BA9;
+        .monday {
+            padding: 15px 0px 0px 0px;
+        }
+        .day {
+            display: flex;
+            justify-content: space-between;
+            p {
+                padding: 20px 0px;
+                font-size: 12px;
+                color: lightgray;
+            }
+            hr {
+                color: lightgray;
+            }
+        }
+    }
+}
+
+span {
+    @include centered;
+    a {
+        font-size: 48px;
+        font-family: $font-family;
+        margin-top: 50px;
+        padding: 10px 20px;
+        background: $bg-card;
+        color: $sub-color1;
     }
 }
