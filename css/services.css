@@ -1,50 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 3px;
   background-color: #f8f9fa;
   font-family: "Roboto", sans-serif;
 }
 nav .nav-top {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 nav .nav-top .nav-left img {
   height: 60px;
   width: auto;
 }
 nav .nav-top .nav-center {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   text-align: center;
 }
 nav .nav-top .nav-center .nav-center-dafualt {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 20px;
   width: 100%;
 }
@@ -68,20 +50,12 @@ nav .nav-top .nav-center .nav-center-dafualt li a:hover {
   background: #01B2B7;
 }
 nav .nav-top .nav-righ {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 nav .nav-top .nav-righ .nav-desk {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 15px;
   list-style: none;
   margin: 0;
@@ -134,12 +108,22 @@ section .text1 {
 }
 section .text1 h3 {
   color: #FFFFFF;
+  font-size: 24px;
+}
+section .text1 a {
+  color: #FFFFFF;
+  font-size: 16px;
 }
 section .text2 {
   margin-top: 12px;
 }
 section .text2 h3 {
   color: #FFFFFF;
+  font-size: 24px;
+}
+section .text2 a {
+  color: #FFFFFF;
+  font-size: 16px;
 }
 section .text4 {
   display: flex;
@@ -161,8 +145,7 @@ section .text4 .text-icon p {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
@@ -175,15 +158,9 @@ section .text4 .text-icon p {
   font-family: sans-serif;
   font-size: 25px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-services {
@@ -206,18 +183,11 @@ span #Service {
 }
 
 .card-service1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 .card-service1 .card-of-service {
@@ -225,8 +195,7 @@ span #Service {
   height: 80vh;
   background: #FFFFFF;
   margin: 10px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 .card-service1 .card-of-service img {
   width: 100%;
@@ -259,15 +228,9 @@ span #Service {
 }
 
 .contant-service {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 90vh;
   background: #01B2B7;
@@ -278,12 +241,6 @@ span #Service {
   margin-left: 20px;
 }
 .contant-service .text-contant-service h1 {
-<<<<<<< HEAD
-  font-size: 50px;
-<<<<<<< HEAD
-}
->>>>>>> 6949428fd22c40abd74564a80a11e15cb1f73c6a
-=======
   font-size: 70px;
 }
 .contant-service .text-contant-service p {
@@ -303,8 +260,4 @@ span #Service {
   position: relative;
   top: 62px;
   right: 60px;
-}
->>>>>>> c2858bef18ed6af6d348715606c0045951a2e1e3
-=======
 }/*# sourceMappingURL=services.css.map */
->>>>>>> kanha
