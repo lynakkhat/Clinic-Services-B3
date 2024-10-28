@@ -215,14 +215,53 @@ main .content .small img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 150px;
 }
 .group-card .card {
-  width: 30%;
+  width: 25%;
+  height: 40vh;
+  padding: 48px 32px;
   color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+.group-card .card p {
+  padding: 30px 0px;
 }
 .group-card .card1 {
-  background: #01B2B7;
+  background: #3EC4C8;
 }
 .group-card .card2 {
-  background: teal;
+  background: #01B2B7;
+}
+.group-card .card3 {
+  background: #395BA9;
+}
+.group-card .card3 .monday {
+  padding: 15px 0px 0px 0px;
+}
+.group-card .card3 .day {
+  display: flex;
+  justify-content: space-between;
+}
+.group-card .card3 .day p {
+  padding: 20px 0px;
+  font-size: 12px;
+  color: lightgray;
+}
+.group-card .card3 .day hr {
+  color: lightgray;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span a {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+  padding: 10px 20px;
+  background: #E8F4F3;
+  color: #395BA9;
 }
