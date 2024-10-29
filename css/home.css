@@ -99,6 +99,7 @@ section .text3 .iconr-footer {
 }
 section .text3 .iconr-footer p {
   color: #FFFFFF;
+  font-family: sans-serif;
 }
 section .text3 .iconr-footer span {
   color: #FFFFFF;
@@ -109,10 +110,13 @@ section .text1 {
 section .text1 h3 {
   color: #FFFFFF;
   font-size: 24px;
+  font-family: sans-serif;
 }
 section .text1 a {
   color: #FFFFFF;
   font-size: 16px;
+  font-family: sans-serif;
+  margin-top: 24px;
 }
 section .text2 {
   margin-top: 12px;
@@ -120,10 +124,13 @@ section .text2 {
 section .text2 h3 {
   color: #FFFFFF;
   font-size: 24px;
+  font-family: sans-serif;
 }
 section .text2 a {
   color: #FFFFFF;
   font-size: 16px;
+  font-family: sans-serif;
+  margin-top: 24px;
 }
 section .text4 {
   display: flex;
@@ -140,6 +147,7 @@ section .text4 .text-icon img {
 }
 section .text4 .text-icon p {
   color: #FFFFFF;
+  font-family: sans-serif;
 }
 
 * {
