@@ -173,12 +173,23 @@ span #Service {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 20px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .card-service1 .card-of-service {
-  width: 26%;
-  height: 80vh;
+  width: 24%;
+  height: 70vh;
   background: #FFFFFF;
   margin: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
@@ -188,6 +199,7 @@ span #Service {
 }
 .card-service1 .card-of-service h2 {
   font-size: 20px;
+  text-align: center;
   margin-left: 10px;
   font-family: "Roboto", sans-serif;
   margin-top: 20px;
@@ -203,13 +215,9 @@ span #Service {
   border: none;
   border-radius: 10px;
 }
-.card-service1 .card-of-service p {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  top: 10px;
-  left: 10px;
-  width: 96%;
+.card-service1 .card-of-service:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .contant-service {
