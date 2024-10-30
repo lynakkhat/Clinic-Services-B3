@@ -66,28 +66,63 @@
     }
     
 }
-.cotainer{
-    @include centered;
-    width: 100%;
-    .card-contaner{
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        width: 400px;
-        height: 500px;
-        justify-content: space-between;
-        margin: 12px;
-        border-radius: 12px;
-        @include text-header;
-        font-size: 16px;
-        color: $sub-color3;
 
-        .card-ctn{
-            background: #395BA9;
-            height: 78vh;
-        }
-        img{
-            width: 100%;
-            height: 50vh;
-        }
-}
 
-}
+.doctor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .card-doctor {
+    width: 250px;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    height: 400px; // Increased height for more content
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    &:hover {
+      transform: translateY(-10px);
+    }
+  
+    img {
+      width: 100%;
+      height: 55%;
+      object-fit: cover;
+      border-bottom: 5px solid #003366;
+    }
+  
+    .card-content {
+      background-color: #ffffff;
+      color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      height: 45%; // Ensures the text area is taller
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      h3 {
+        font-size: 1.4em;
+        margin: 0;
+        font-weight: bold;
+        padding-bottom: 8px;
+      }
+  
+      p {
+        font-size: 1em;
+        color: #d1d9e0;
+        margin: 0;
+      }
+    }
+  }
