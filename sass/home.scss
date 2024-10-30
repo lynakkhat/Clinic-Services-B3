@@ -1,30 +1,35 @@
 @import "./main.scss";
 
 main {
-    background-image: url(https://i.pinimg.com/564x/75/99/e2/7599e20a079c876a76bb98638bae940b.jpg);
+    background-image: url(https://t3.ftcdn.net/jpg/06/31/48/64/240_F_631486438_ulkY2lKYk9ByyX64KJ6OrJZZqKz7Ef9C.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 80vh;
+
     .content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         .btn {
-            margin: auto;
-            padding: 0px 90px; 
-            h2 {
+           margin-top: 122px;
+           #h2 {
                 font-family: $font-family;
-                padding: 20px 0px;
-            }
-            h1 {
-                font-size: 40px;
-                font-family: $font-family;
-            }
-            p {
-                font-size: 20px;
-                padding: 20px 0px;
-            }
+                font-size: $font-size + 8;
+           }
+           h1 {
+            padding: 28px 0px;
+            font-family: $font-family;
+            font-size: $text-header;
+            color: $sub-color1;
+           }
+           p {
+            font-size: $font-size + 10;
+           }
+        }
         .bt {
-            margin-top: 70px;
+            display: flex;
+            text-align: center;
             .bt1 {
                 width: 220px;
                 padding: 18px;
@@ -35,7 +40,7 @@ main {
                 font-size: $font-size;
                 cursor: pointer;
             }
-
+    
             .bt1:hover {
                 background: $sub-color3;
                 color: $main-color;
@@ -54,14 +59,16 @@ main {
                 background: $sub-color3;
                 border: solid 2px $sub-color3;
                 color: $main-color;
-            }
+           }
         }
-        }
-        .small img {
-            margin-top: 125px;
-        }
+
     }
+
 }
+        // .small img {
+        //     margin-top: 125px;
+        // }
+
 
 .bg {
     display: flex;
