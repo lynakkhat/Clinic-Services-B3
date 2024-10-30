@@ -1,50 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+<<<<<<< HEAD
   padding: 3px;
+=======
+  padding: 16px 0px 0px 0px;
+>>>>>>> lynak
   background-color: #f8f9fa;
   font-family: "Roboto", sans-serif;
 }
 nav .nav-top {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
+<<<<<<< HEAD
+=======
+  position: fixed;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+>>>>>>> lynak
 }
 nav .nav-top .nav-left img {
   height: 60px;
   width: auto;
 }
 nav .nav-top .nav-center {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   text-align: center;
 }
 nav .nav-top .nav-center .nav-center-dafualt {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 20px;
   width: 100%;
 }
@@ -68,20 +59,12 @@ nav .nav-top .nav-center .nav-center-dafualt li a:hover {
   background: #01B2B7;
 }
 nav .nav-top .nav-righ {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 nav .nav-top .nav-righ .nav-desk {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 15px;
   list-style: none;
   margin: 0;
@@ -112,22 +95,79 @@ nav .nav-top .nav-righ .nav-desk a {
   background: rgba(0, 128, 128, 0.955);
 }
 
+section {
+  display: flex;
+  justify-content: space-around;
+  background: #15063F;
+  width: 100%;
+  height: 48vh;
+  margin-top: 58px;
+  margin-bottom: 58px;
+}
+section .text3 {
+  margin-top: 62px;
+}
+section .text3 .iconr-footer {
+  display: flex;
+  margin: 12px;
+}
+section .text3 .iconr-footer p {
+  color: #FFFFFF;
+}
+section .text3 .iconr-footer span {
+  color: #FFFFFF;
+}
+section .text1 {
+  margin-top: 62px;
+}
+section .text1 h3 {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+section .text1 a {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+section .text2 {
+  margin-top: 62px;
+}
+section .text2 h3 {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+section .text2 a {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+section .text4 {
+  display: flex;
+  justify-content: space-around;
+  background: #15063F;
+  margin-top: 82px;
+}
+section .text4 .text-icon {
+  display: flex;
+  margin: 24px;
+}
+section .text4 .text-icon img {
+  width: 30px;
+  height: 30px;
+}
+section .text4 .text-icon p {
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
 
 body {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   margin: 0;
   background-image: url(https://i.pinimg.com/564x/75/99/e2/7599e20a079c876a76bb98638bae940b.jpg);
@@ -149,8 +189,7 @@ body {
   width: 400px;
   padding: 20px 30px;
   background: #fff;
-  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   text-align: left;
   margin: auto;
@@ -172,24 +211,15 @@ h2 {
 }
 
 .appointment-form .form-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 15px;
   margin-bottom: 15px;
 }
 
 .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex-direction: column;
+  flex: 1;
 }
 
 label {
@@ -220,11 +250,23 @@ button.submit-btn {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: background 0.3s;
   transition: background 0.3s;
   margin-top: 10px;
 }
 
 button.submit-btn:hover {
+<<<<<<< HEAD
   background-color: #395BA9;
 }
+=======
+  background-color: #218838;
+}
+
+span {
+  color: red;
+<<<<<<< HEAD
+}/*# sourceMappingURL=set-appointment.css.map */
+=======
+}
+>>>>>>> lynak
+>>>>>>> master
