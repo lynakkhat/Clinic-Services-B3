@@ -22,6 +22,7 @@ nav .nav-top .nav-left img {
 nav .nav-top .nav-center {
   flex-grow: 1;
   text-align: center;
+  justify-content: center;
 }
 nav .nav-top .nav-center .nav-center-dafualt {
   list-style: none;
@@ -282,7 +283,7 @@ main .content .bt .bt2 {
   background: none;
   border: solid 2px #01B2B7;
   border-radius: 5px;
-  color: #FFFFFF;
+  color: #01B2B7;
   font-size: 18px;
 }
 main .content .bt .bt2:hover {
