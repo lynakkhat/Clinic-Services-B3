@@ -3,11 +3,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-<<<<<<< HEAD
-  padding: 3px;
-=======
   padding: 16px 0px 0px 0px;
->>>>>>> lynak
   background-color: #f8f9fa;
   font-family: "Roboto", sans-serif;
 }
@@ -16,11 +12,8 @@ nav .nav-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
-=======
   position: fixed;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
->>>>>>> lynak
 }
 nav .nav-top .nav-left img {
   height: 60px;
@@ -332,8 +325,4 @@ button.submit-btn:hover {
 
 span {
   color: red;
-<<<<<<< HEAD
-}/*# sourceMappingURL=set-appointment.css.map */
-=======
 }
->>>>>>> lynak
