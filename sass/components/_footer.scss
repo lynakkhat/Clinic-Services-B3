@@ -13,6 +13,7 @@ section{
         margin: 12px;
         p{
             color: $sub-color3;
+            font-family: sans-serif;
         }
         span{
             color: $sub-color3;
@@ -25,6 +26,14 @@ section{
         margin-top: 62px;
         h3{
             color: $sub-color3;
+            font-size: 24px;
+            font-family: sans-serif;
+        }
+        a{
+            color: $sub-color3;
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-top: 24px;
         }
     }
    
@@ -32,6 +41,14 @@ section{
         margin-top: 62px;
         h3{
             color: $sub-color3;
+            font-size: 24px;
+            font-family: sans-serif ;
+        }
+        a{
+            color: $sub-color3;
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-top: 24px;
         }
     }
     .text4{
@@ -49,6 +66,7 @@ section{
             }
             p{
                 color: $sub-color3;
+                font-family: sans-serif;
             }
         }
     }
