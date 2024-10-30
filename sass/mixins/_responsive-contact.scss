@@ -1,0 +1,49 @@
+@media(min-width:768px) and (max-width: 1024px) {
+    main{
+        flex-basis: 30%;
+        .text{
+            flex-basis: 30%;
+            .content{
+                flex-basis: 30%;
+                h1{
+                    font-size: $font-size1;   
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+        .contact{
+            .box{
+                flex-basis: 30%;
+                h2{
+                    font-size: $font-size;
+                }
+                p{
+                    font-size: 12px;
+                }
+
+            }
+            .ro{
+                label{
+                    font-size: 10px;
+                }
+                input{
+                    padding: 8px;
+                }
+        }
+
+        }
+    }
+    .card-group{
+        flex-basis: 45%;
+        .card1{
+            flex-basis: 45%;
+            flex-direction: column;
+        }
+    }
+}
+
+@media(min-width:320px) and (max-width:767px) {
+    
+}

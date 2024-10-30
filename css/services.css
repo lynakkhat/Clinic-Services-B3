@@ -3,11 +3,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-<<<<<<< HEAD
-  padding: 3px;
-=======
   padding: 16px 0px 0px 0px;
->>>>>>> lynak
   background-color: #f8f9fa;
   font-family: "Roboto", sans-serif;
 }
@@ -16,11 +12,8 @@ nav .nav-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
-=======
   position: fixed;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
->>>>>>> lynak
 }
 nav .nav-top .nav-left img {
   height: 60px;
@@ -208,22 +201,6 @@ section .text4 .text-icon p {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-.card-service1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-.card-service1 .card-of-service {
-  width: 26%;
-  height: 80vh;
-  background: #FFFFFF;
-  margin: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-=======
 #Service:hover {
   text-decoration: underline;
 }
@@ -259,7 +236,6 @@ section .text4 .text-icon p {
 .card-container .card-service1 .card-of-service .card-content {
   padding: 20px;
   text-align: center;
->>>>>>> lynak
 }
 .card-container .card-service1 .card-of-service .card-content h2 {
   font-size: 20px;
@@ -325,8 +301,4 @@ section .text4 .text-icon p {
   position: relative;
   top: 62px;
   right: 60px;
-<<<<<<< HEAD
 }/*# sourceMappingURL=services.css.map */
-=======
-}
->>>>>>> lynak
