@@ -1,6 +1,6 @@
 @import "./main.scss";
 @import"./components/card";
-@import"./mixins/responsive";
+@import"./mixins/responsive-contact";
 main {
     .text{
         @include centered;

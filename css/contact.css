@@ -351,6 +351,41 @@ section .text4 .text-icon p {
   margin: 0;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    flex-basis: 30%;
+  }
+  main .text {
+    flex-basis: 30%;
+  }
+  main .text .content {
+    flex-basis: 30%;
+  }
+  main .text .content h1 {
+    font-size: 14px;
+  }
+  main .text .content p {
+    font-size: 10px;
+  }
+  main .text .content img {
+    width: 10%;
+  }
+  main .contact .box {
+    flex-basis: 30%;
+  }
+  main .contact .box h2 {
+    font-size: 18px;
+  }
+  main .contact .box p {
+    font-size: 12px;
+  }
+  main .contact .ro label {
+    font-size: 10px;
+  }
+  main .contact .ro input {
+    padding: 8px;
+  }
+}
 main .text {
   display: flex;
   justify-content: center;
@@ -462,4 +497,4 @@ aside .svar .icon {
 .map iframe {
   width: 100%;
   margin-top: 12px;
-}
+}/*# sourceMappingURL=contact.css.map */
