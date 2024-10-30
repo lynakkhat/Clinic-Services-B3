@@ -70,23 +70,24 @@
 
 .doctor-cards {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
     padding: 20px;
     max-width: 1200px;
   }
   
   .card-doctor {
     width: 250px;
-    justify-content: center;
     background-color: #ffffff;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     text-align: center;
-    height: 400px; // Increased height for more content
+    height: 400px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -107,13 +108,14 @@
       color: #333;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 20px;
-      height: 45%; // Ensures the text area is taller
+      height: 45%; 
       display: flex;
       flex-direction: column;
       justify-content: center;
   
       h3 {
         font-size: 1.4em;
+        font-family: $font-family;
         margin: 0;
         font-weight: bold;
         padding-bottom: 8px;
@@ -121,7 +123,7 @@
   
       p {
         font-size: 1em;
-        color: #d1d9e0;
+        font-family: $font-family;
         margin: 0;
       }
     }

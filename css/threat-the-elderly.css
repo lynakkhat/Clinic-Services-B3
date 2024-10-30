@@ -25,6 +25,7 @@ nav .nav-top .nav-left img {
 nav .nav-top .nav-center {
   flex-grow: 1;
   text-align: center;
+  justify-content: center;
 }
 nav .nav-top .nav-center .nav-center-dafualt {
   list-style: none;

@@ -23,6 +23,7 @@ nav {
         .nav-center {
             flex-grow: 1;
             text-align: center;
+            justify-content: center;
 
             .nav-center-dafualt {
                 list-style: none;
@@ -98,3 +99,5 @@ nav {
 .nav-desk ul .apm a:hover {
     background: rgba(0, 128, 128, 0.955);
 }
+
+
