@@ -32,6 +32,7 @@ nav .nav-top {
 nav .nav-top .nav-left img {
   height: 60px;
   width: auto;
+  margin: 5px 0px 5px 48px;
 }
 nav .nav-top .nav-center {
   -webkit-box-flex: 1;
@@ -109,6 +110,7 @@ nav .nav-top .nav-righ .nav-righ a {
   background: #01B2B7;
   color: white;
   padding: 8px 12px;
+  margin-right: 48px;
   cursor: pointer;
   text-transform: uppercase;
 }
