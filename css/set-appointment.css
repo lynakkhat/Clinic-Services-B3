@@ -191,7 +191,7 @@ section .text4 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #15063F;
+  background: black;
   margin-top: 82px;
 }
 section .text4 .text-icon {
