@@ -14,6 +14,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         position: fixed;
+        z-index: 1000;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         .nav-left img {
             height: 60px;
@@ -23,6 +24,7 @@ nav {
         .nav-center {
             flex-grow: 1;
             text-align: center;
+            justify-content: center;
 
             .nav-center-dafualt {
                 list-style: none;
@@ -60,14 +62,10 @@ nav {
             display: flex;
             align-items: center;
 
-            .nav-desk {
+            .nav-righ {
                 display: flex;
                 align-items: center;
                 gap: 15px; 
-
-                .material-symbols-outlined {
-                    color: $main-color;
-                }
 
                 a {
                     text-decoration: none;
@@ -87,14 +85,17 @@ nav {
     border-bottom: 2px solid $main-color;
 }
 
-.nav-desk ul .apm a{
+.nav-righ ul .apm a{
     text-decoration: none;
     background: $main-color;
     color: white;
     padding: 8px 12px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
-.nav-desk ul .apm a:hover {
+.nav-righ ul .apm a:hover {
     background: rgba(0, 128, 128, 0.955);
 }
+
+
