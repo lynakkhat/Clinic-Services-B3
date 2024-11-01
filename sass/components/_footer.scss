@@ -15,10 +15,11 @@ section{
         }
        .iconr-footer{
         display: flex;
-        margin: 12px;
+        padding: 6px 0px;
         p{
             color: $sub-color2;
             font-family: sans-serif;
+            padding: 6px 0px 0px 4px;
         }
         span{
             color: $sub-color2;
@@ -33,16 +34,20 @@ section{
             color: $sub-color3;
             font-size: 24px;
             font-family: sans-serif;
+            padding: 0px 0px 8px 0px;
         }
-        a{
-            color: $sub-color2;
-            font-size: 16px;
-            font-family: sans-serif;
-            margin-top: 24px;
-            // padding: 38px 0px;
-        }
-        a:hover {
-            color: $sub-color3;
+        ul {
+            li {
+                padding: 3px 0px;
+                a{
+                    color: $sub-color2;
+                    font-size: 16px;
+                    font-family: sans-serif;
+                }
+                a:hover {
+                    color: $sub-color3;
+                }
+            }
         }
     }
    
@@ -52,16 +57,22 @@ section{
             color: $sub-color3;
             font-size: 24px;
             font-family: sans-serif ;
+            padding: 0px 0px 8px 0px;
         }
-        a{
-            color: $sub-color3;
-            font-size: 16px;
-            font-family: sans-serif;
-            margin-top: 24px;
-            color: $sub-color2;
-        }
-        a:hover {
-            color: $sub-color3;
+        ul {
+            li {
+                padding: 3px 0px;
+                a{
+                    color: $sub-color3;
+                    font-size: 16px;
+                    font-family: sans-serif;
+                    margin-top: 24px;
+                    color: $sub-color2;
+                }
+                a:hover {
+                    color: $sub-color3;
+                }
+            }
         }
     }
     .text4{
