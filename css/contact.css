@@ -262,6 +262,9 @@ section .text4 .text-icon p {
   background: #01B2B7;
   color: #FFFFFF;
 }
+.card-group .card1 .card .btn-card a {
+  color: #FFFFFF;
+}
 
 .card-group1 {
   justify-content: space-around;
@@ -293,6 +296,9 @@ section .text4 .text-icon p {
   margin-top: 30px;
   border-radius: 12px;
   background: #01B2B7;
+  color: #FFFFFF;
+}
+.card-group1 .card2 .card .btn-card a {
   color: #FFFFFF;
 }
 
@@ -367,9 +373,6 @@ section .text4 .text-icon p {
   main .text .content p {
     font-size: 10px;
   }
-  main .text .content img {
-    width: 10%;
-  }
   main .contact .box {
     flex-basis: 30%;
   }
@@ -385,6 +388,13 @@ section .text4 .text-icon p {
   main .contact .ro input {
     padding: 8px;
   }
+  .card-group {
+    flex-basis: 45%;
+  }
+  .card-group .card1 {
+    flex-basis: 45%;
+    flex-direction: column;
+  }
 }
 main .text {
   display: flex;
@@ -393,7 +403,7 @@ main .text {
   font-family: sans-serif;
   font-size: 25px;
   text-align: center;
-  background-image: url(https://media.istockphoto.com/id/863348696/photo/doctor-is-checking-a-patient.jpg?s=612x612&w=0&k=20&c=AzEN5lBPCNB6lTreli7TC9MfkexTGOpzwg-YbS7QPm4=);
+  background-image: url(https://marvel-b1-cdn.bc0a.com/f00000000293897/www.scphealth.com/wp-content/uploads/2021/12/news_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

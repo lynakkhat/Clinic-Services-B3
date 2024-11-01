@@ -1,0 +1,22 @@
+@import"../main.scss";
+
+.text-p1{
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    border-radius: 12px;
+    font-family: sans-serif;
+    margin: 60px;
+    background: rgb(96, 195, 252);
+    margin-left: 220px;
+    h1{
+
+    text-align: center;
+    }
+    h3{
+        margin-top: 20px; 
+    }
+    #phas{
+        margin-top: 12px;
+    }
+}
