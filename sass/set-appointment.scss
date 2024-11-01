@@ -76,9 +76,9 @@ textarea {
     height: 60px;
 }
 
-button.submit-btn {
+.submit {
     width: 100%;
-    padding: 12px;
+    padding: 12px ;
     font-size: 16px;
     background-color: $main-color;
     color: #fff;
@@ -87,9 +87,15 @@ button.submit-btn {
     cursor: pointer;
     transition: background 0.3s;
     margin-top: 10px;
+    span a {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $sub-color3;
+    }
 }
 
-button.submit-btn:hover {
+.submit:hover {
     background-color:$sub-color1;
 }
 
