@@ -19,6 +19,7 @@ nav {
         .nav-left img {
             height: 60px;
             width: auto;
+            margin: 5px 0px 5px 48px;
         }
 
         .nav-center {
@@ -83,6 +84,7 @@ nav {
 .nav-center-dafualt a.active-link {
     // font-weight: bold;
     border-bottom: 2px solid $main-color;
+
 }
 
 .nav-righ ul .apm a{
@@ -90,6 +92,7 @@ nav {
     background: $main-color;
     color: white;
     padding: 8px 12px;
+    margin-right: 48px;
     cursor: pointer;
     text-transform: uppercase;
 }
