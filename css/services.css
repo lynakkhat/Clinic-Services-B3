@@ -449,3 +449,33 @@ section .text4 .text-icon p {
   top: 62px;
   right: 60px;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  .contant-service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contant-service .img-contant-service img {
+    display: none;
+  }
+  .contant-service .text-contant-service h1 {
+    font-size: 50px;
+  }
+  .contant-service .text-contant-service p {
+    font-size: 12px;
+  }
+  .text-services {
+    font-size: 20px;
+  }
+  .services {
+    height: 50vh;
+  }
+  .services .service-text h1 {
+    font-size: 40px;
+  }
+  .services .service-text h3 {
+    font-size: 24px;
+  }
+}
