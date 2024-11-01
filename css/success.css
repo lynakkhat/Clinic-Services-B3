@@ -285,7 +285,9 @@ section .text4 .text-icon p {
 }
 
 body {
-  background-color: #f4f6f8;
+  background-image: url(https://tediselmedical.com/wp-content/uploads/2024/09/humanizacion_habitaciones_hospitalarias_featured_image_20241110_tedisel_medical.jpg);
+  background-position: center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,6 +298,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 .confirmation-container {
@@ -338,4 +341,14 @@ body {
 }
 .confirmation-container .appointment-details h2 {
   font-size: 18;
+}
+.confirmation-container .instructions {
+  margin: 10px;
+}
+.confirmation-container .buttons a {
+  color: #4CAF50;
+  margin: 0px 12px;
+}
+.confirmation-container .buttons a:hover {
+  border-bottom: solid 2px #4CAF50;
 }

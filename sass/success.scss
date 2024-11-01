@@ -1,11 +1,15 @@
 @import "./main.scss";
 
 body {
-  background-color: #f4f6f8;
+  // background-color: #f4f6f8;
+  background-image: url(https://tediselmedical.com/wp-content/uploads/2024/09/humanizacion_habitaciones_hospitalarias_featured_image_20241110_tedisel_medical.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: $font-family;
 }
 .confirmation-container {
   text-align: center;
@@ -41,5 +45,16 @@ body {
   }
   .appointment-details h2 {
     font-size: 18
+  }
+  .instructions{
+    margin: 10px;
+
+  }
+  .buttons a{
+    color:#4CAF50 ;
+    margin: 0px 12px;
+  }
+  .buttons a:hover{
+    border-bottom:solid 2px #4CAF50;
   }
 }
