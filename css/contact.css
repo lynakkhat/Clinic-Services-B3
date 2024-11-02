@@ -540,4 +540,132 @@ aside .svar .icon {
 .map iframe {
   width: 100%;
   margin-top: 12px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    flex-basis: 30%;
+  }
+  main .text {
+    flex-basis: 30%;
+  }
+  main .text .content {
+    flex-basis: 30%;
+  }
+  main .text .content h1 {
+    font-size: 24px;
+  }
+  main .text .content p {
+    font-size: 10px;
+  }
+  main .contact .box {
+    flex-basis: 30%;
+  }
+  main .contact .box h2 {
+    font-size: 30px;
+  }
+  main .contact .box p {
+    font-size: 12px;
+  }
+  main .contact .ro label {
+    font-size: 10px;
+  }
+  main .contact .ro input {
+    padding: 8px;
+  }
+  .card-group {
+    flex-basis: 30%;
+    flex-wrap: wrap;
+  }
+  .card-group .card1 {
+    width: 50px;
+    height: 30vh;
+    flex-basis: 30%;
+    flex-wrap: wrap;
+  }
+  .card-group .card1 .card {
+    flex-basis: 30%;
+    flex-direction: column;
+  }
+  .card-group1 {
+    flex-basis: 30%;
+  }
+  .card-group1 .card2 {
+    width: 50px;
+    height: 30vh;
+    flex-basis: 30%;
+    flex-direction: column;
+  }
+  section {
+    display: flex;
+    justify-content: space-around;
+    background: #15063F;
+    width: 100%;
+    height: 40vh;
+    margin-top: 58px;
+    margin-bottom: 58px;
+  }
+  section .text3 {
+    margin-top: 62px;
+  }
+  section .text3 .iconr-footer {
+    display: flex;
+    margin: 12px;
+  }
+  section .text3 .iconr-footer p {
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 12px;
+  }
+  section .text3 .iconr-footer span {
+    font-size: 12px;
+    color: #FFFFFF;
+  }
+  section .text1 {
+    margin-top: 62px;
+  }
+  section .text1 h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  section .text1 a {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 24px;
+  }
+  section .text2 {
+    margin-top: 62px;
+  }
+  section .text2 h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  section .text2 a {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 24px;
+  }
+  section .text4 {
+    display: flex;
+    justify-content: space-around;
+    background: #15063F;
+    margin-top: 82px;
+  }
+  section .text4 .text-icon {
+    display: flex;
+    margin: 12px;
+  }
+  section .text4 .text-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  section .text4 .text-icon p {
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=contact.css.map */
