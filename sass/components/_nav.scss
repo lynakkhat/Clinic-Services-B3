@@ -1,104 +1,73 @@
 @import "../components/variable";
 
-nav {
+.nav-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 0px 0px 0px;
-    background-color: #f8f9fa;
+    padding: 10px 20px;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
     font-family: $font-family;
-
-    .nav-top {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        z-index: 1000;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        .nav-left img {
-            height: 60px;
-            width: auto;
-            margin: 5px 0px 5px 48px;
-        }
-
-        .nav-center {
-            flex-grow: 1;
-            text-align: center;
-            justify-content: center;
-
-            .nav-center-dafualt {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                gap: 20px; 
-                width: 100%;
-
-                li {
-                    display: inline-block;
-                    text-decoration: none;
-                    font-size: 18px;
-                    color: #333;
-                    padding: 10px;
-
-                    a {
-                        text-decoration: none;
-                        font-size: 18px;
-                        padding: 10px;
-                        color: $main-color;
-                        text-transform: uppercase;
-                        cursor: pointer;
-                    }
-                    a:hover {
-                        color: white;
-                        background: $main-color;
-                    }
-                }
-            }
-        }
-
-        .nav-righ {
-            display: flex;
-            align-items: center;
-
-            .nav-righ {
-                display: flex;
-                align-items: center;
-                gap: 15px; 
-
-                a {
-                    text-decoration: none;
-                    color: white;
-                    text-transform: uppercase;
-                }
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
-        }
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .nav-left {
+      img {
+        height: 50px;
+        margin-left: 38px;
+      }
     }
-}
-
-.nav-center-dafualt a.active-link {
-    // font-weight: bold;
-    border-bottom: 2px solid $main-color;
-
-}
-
-.nav-righ ul .apm a{
-    text-decoration: none;
-    background: $main-color;
-    color: white;
-    padding: 8px 12px;
-    margin-right: 48px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.nav-righ ul .apm a:hover {
-    background: rgba(0, 128, 128, 0.955);
-}
-
-
+    .nav-center {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+  
+      .nav-center-default {
+        display: flex;
+        gap: 30px; 
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                padding: 10px;
+                color: $main-color;
+                text-transform: uppercase;
+                cursor: pointer;
+            
+                &.active-link {
+                    border-bottom: 2px solid $main-color;
+                }
+            
+                &:hover {
+                    color: white;
+                    background: $main-color;
+                }
+            }
+        }
+      }
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+  
+      .apm {
+        a {
+          text-decoration: none;
+          color: $main-color;
+          font-weight: bold;
+          padding: 8px 16px;
+          border: 1px solid $main-color;
+          border-radius: 4px;
+  
+          &:hover {
+            color: teal;
+          }
+        }
+      }
+    }
+  }
+  
