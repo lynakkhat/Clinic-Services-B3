@@ -584,8 +584,9 @@ span a:hover {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   main {
-    height: auto;
-    background-attachment: fixed;
+    height: 55vh;
+    background-image: none;
+    background-color: #B9D0DD;
   }
   main .content {
     display: flex;

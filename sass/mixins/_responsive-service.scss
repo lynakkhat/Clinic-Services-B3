@@ -1,7 +1,23 @@
 @import "../components/variable";
+
 @media only screen and (min-width: 320px) and (max-width: 767px){
+    
+    .services {
+        background-image: none;
+        background-color: #B9D0DD;
+        height: 55vh;
+        .service-text {
+            color: $sub-color1;
+        }
+    }
+
+    .text-services {
+        height: 20vh;
+    }
+
     .contant-service{
         flex-direction: column;
+        height: 50vh;
         .img-contant-service{
           img{
             display: none;
@@ -12,6 +28,7 @@
                 font-size: 38px;
             } 
             p{
+                width: 100%;
                 font-size: 10px;
             }
         }

@@ -41,11 +41,14 @@
 
     main{
         .text{
-            height: 50vh;
+            background-image: none;
+            background: #B9D0DD;
+            height: 55vh;
             font-size: 18px;
             padding-left: 28px;
             p {
                 font-size: 18px;
+                padding: 12px 0px;
             }
         }
     }

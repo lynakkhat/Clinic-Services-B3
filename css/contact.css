@@ -444,12 +444,15 @@ section .text4 .text-icon p {
     overflow-x: hidden;
   }
   main .text {
-    height: 50vh;
+    background-image: none;
+    background: #B9D0DD;
+    height: 55vh;
     font-size: 18px;
     padding-left: 28px;
   }
   main .text p {
     font-size: 18px;
+    padding: 12px 0px;
   }
   aside {
     flex-direction: column;
@@ -625,12 +628,15 @@ aside .svar p {
     overflow-x: hidden;
   }
   main .text {
-    height: 50vh;
+    background-image: none;
+    background: #B9D0DD;
+    height: 55vh;
     font-size: 18px;
     padding-left: 28px;
   }
   main .text p {
     font-size: 18px;
+    padding: 12px 0px;
   }
   aside {
     flex-direction: column;
