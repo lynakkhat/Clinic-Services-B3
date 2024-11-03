@@ -5,6 +5,7 @@
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #fff;
+  top: 0;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -332,9 +333,14 @@ section .text4 .text-icon p {
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   font-size: 36px;
+  text-align: center;
 }
 .family-planning .text-fp h1 {
   padding: 100px 18px;
+}
+
+.card-container {
+  font-family: "Roboto", sans-serif;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -378,4 +384,4 @@ section .text4 .text-icon p {
     text-align: center;
     padding: 0px;
   }
-}/*# sourceMappingURL=treating-childhood.css.map */
+}

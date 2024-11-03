@@ -5,6 +5,7 @@
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #fff;
+  top: 0;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -312,13 +313,14 @@ section .text4 .text-icon p {
 
 .text-p5 {
   width: 94%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   padding: 12px;
   border-radius: 12px;
   font-family: sans-serif;
   background: #FFFFFF;
-  margin: auto;
-  margin-top: 60px;
+  margin-top: 90px;
+  margin-bottom: 20px;
 }
 .text-p5 h1 {
   text-align: center;
@@ -328,4 +330,4 @@ section .text4 .text-icon p {
 }
 .text-p5 #phas {
   margin-top: 12px;
-}/*# sourceMappingURL=telemedicine.css.map */
+}

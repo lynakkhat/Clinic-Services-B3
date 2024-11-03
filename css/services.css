@@ -5,6 +5,7 @@
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #fff;
+  top: 0;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -519,4 +520,4 @@ section .text4 .text-icon p {
   .text-services {
     font-size: 30px;
   }
-}/*# sourceMappingURL=services.css.map */
+}
