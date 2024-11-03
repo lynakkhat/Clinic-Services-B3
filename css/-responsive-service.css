@@ -1,9 +1,6 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .contant-service {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .contant-service .img-contant-service img {
     display: none;
@@ -60,4 +57,4 @@
   .text-services {
     font-size: 30px;
   }
-}
+}/*# sourceMappingURL=-responsive-service.css.map */

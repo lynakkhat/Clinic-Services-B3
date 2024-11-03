@@ -13,6 +13,11 @@
         height: 30vh;
         background: $bg-card;
         border-radius: 12px;
+        transition: transform 0.3s;
+        &:hover {
+          transform: translateY(-10px);
+        }
+        
         .card{
             margin: 12px;
             span{
@@ -49,12 +54,22 @@
         height: 30vh;
         background:$bg-card;
         border-radius: 12px;
+        transition: transform 0.3s;
+        &:hover {
+          transform: translateY(-10px);
+        }
+      
         .card{
+            transition: transform 0.3 ease, box-shadow 0.3s ease;
             margin: 12px;
+            
+            }
+          
             span{
                 font-size: 50px;
                 color: $main-color;
             }
+            
             .btn-card{
                 width: 100px;
                 height: 30px;
@@ -66,12 +81,16 @@
                 a{
                   color: $sub-color3;
                 }
+                
+            }
+            .btn-card:hover{
+              background: teal;
             }
             
         }
     }
     
-}
+
 
 
 .doctor-cards {

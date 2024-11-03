@@ -371,9 +371,7 @@ section .text4 .text-icon p {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
 }
 .card-container .card-service1 .card-of-service {
@@ -521,4 +519,4 @@ section .text4 .text-icon p {
   .text-services {
     font-size: 30px;
   }
-}
+}/*# sourceMappingURL=services.css.map */
