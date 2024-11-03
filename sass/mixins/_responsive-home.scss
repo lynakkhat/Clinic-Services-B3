@@ -1,4 +1,6 @@
-/* Mobile */
+@import "../mixins/group-mixin";
+@import "../components/variable";
+// Mobile Home
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     main {
         height: auto;
@@ -92,59 +94,111 @@
             }
             .paragraph-motivate {
                 padding: 20px 0px;
-                font-size: $font-size;
+                font-size: $font-size + 2;
             }
         }
     }
 
     .bg-clinic {
-        flex-direction: column;
-        .fact {
-            padding: 12px;
+        display: none;
+    }
+}
+
+// Tablet Home
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    main {
+        height: 70vh;
+        .content {
+           .btn {
+            padding: 0px 0px 0px 30px;
+            h1 {
+                font-size: $font-size + 40;
+            }
+            p {
+                width: 90%;
+            }
+           }
         }
     }
 
-    section {
-        flex-direction: column;
-        height: auto;
-        padding: 0px 0px 0px 32px;
-        
-        .text3 {
-            margin-top: 28px;
-            h3 {
-                font-size: $font-size + 4;
-                padding: 8px 0px;
+    .bg {
+        flex-direction: column-reverse;
+        .pic {
+            width: 90%;
+            margin: auto;
+            background-repeat: no-repeat;
+            height: 80vh;
+            .logo {
+                margin-top: 28px;
             }
-            .iconr-footer {
-                margin: 0;
-                padding: 6px 0px;
-                p {
-                    padding: 4px 0px 0px 4px;
+            .year {
+                margin-top: 188px;
+                .card {
+                    width: 40%;
+                    padding: 12px;
+                    h1 {
+                        font-size: 80px;
+                    }
                 }
             }
         }
-
-        .text1 {
-            margin-top: 28px;
-            h3 {
-                font-size: $font-size + 4;
-                padding: 0px 0px 8px 0px;
+        .text {
+            width: 90%;
+            margin: auto;
+            padding: 120px 0px 0px 0px;
+            h1 {
+                text-align: center;
+                font-size: $text-header - 20;
             }
-            a {
-                margin-top: 0px;
-                padding: 3px 0px;
+            p {
+                text-align: center;
+                font-size: $font-size + 8;
+            }
+        }
+    }
+
+    .group-card {
+        flex-wrap: wrap;
+        margin-top: 68px;
+        .card {
+            width: 45%;
+            height: 35vh;
+            p {
+                font-size: $font-size;
+            }
+        }
+        .card3 {
+            width: 90%;
+            .day {
+                p {
+                    font-size: $font-size;
+                }
+            }
+        }
+    }
+
+    .motivate {
+        flex-direction: column;
+        margin-top: 18px;
+        .pic-motivate {
+            display: none;
+        }
+        .content-motivate {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            .header-motivate {
+                font-size: $text-header - 20;
+            }
+            .paragraph-motivate {
+                width: 85%;
+                margin: auto;
+                font-size: $font-size + 10;
             }
         }
     }
 }
 
-
-
-
-
-
-
-/* Tablet */
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
-
-}
