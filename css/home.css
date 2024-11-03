@@ -73,7 +73,7 @@ section .text3 {
 section .text3 h3 {
   color: #FFFFFF;
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 section .text3 .iconr-footer {
   display: flex;
@@ -81,7 +81,7 @@ section .text3 .iconr-footer {
 }
 section .text3 .iconr-footer p {
   color: #808080;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 6px 0px 0px 4px;
 }
 section .text3 .iconr-footer span {
@@ -102,7 +102,7 @@ section .text1 ul li {
 section .text1 ul li a {
   color: #808080;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 section .text1 ul li a:hover {
   color: #FFFFFF;
@@ -113,7 +113,7 @@ section .text2 {
 section .text2 h3 {
   color: #FFFFFF;
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0px 0px 8px 0px;
 }
 section .text2 ul li {
@@ -122,7 +122,7 @@ section .text2 ul li {
 section .text2 ul li a {
   color: #FFFFFF;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 24px;
   color: #808080;
 }
@@ -133,11 +133,10 @@ section .text4 {
   display: flex;
   justify-content: space-around;
   background: black;
-  margin-top: 82px;
+  margin-top: 118px;
 }
 section .text4 .text-icon {
   display: flex;
-  margin: 24px;
 }
 section .text4 .text-icon img {
   width: 30px;
@@ -145,7 +144,8 @@ section .text4 .text-icon img {
 }
 section .text4 .text-icon p {
   color: #808080;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  padding: 0px 38px 0px 0px;
 }
 
 .card-container {
@@ -211,111 +211,35 @@ section .text4 .text-icon p {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-
-/* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  main {
-    height: auto;
-    background-attachment: fixed;
+  body {
+    overflow-x: hidden;
   }
-  main .content {
-    display: flex;
-    justify-content: center;
+  .nav-top {
+    place-content: center;
+  }
+  .nav-top .nav-left img {
+    height: 50px;
+    margin-left: 0px;
+  }
+  .nav-top .nav-center .nav-center-dafualt li {
     align-items: center;
   }
-  main .content .btn {
-    padding: 0px 20px 0px 30px;
+  .nav-top .nav-center .nav-center-dafualt li a {
+    font-size: 5px;
+    padding: 2px;
   }
-  main .content .btn #h2 {
-    font-size: 15px;
-  }
-  main .content .btn h1 {
-    font-size: 28px;
-    padding: 20px 0px;
-  }
-  main .content .btn p {
-    font-size: 15px;
-  }
-  main .content .btn .bt {
-    margin-bottom: 80px;
-  }
-  main .content .btn .bt .bt1, main .content .btn .bt .bt2 {
-    width: 100px;
-    font-size: 10px;
-    padding: 10px 5px;
-  }
-  main .content .btn .bt .bt2 {
-    margin-left: 10px;
-  }
-  .bg {
-    flex-direction: column-reverse;
-    margin-top: 40px;
-  }
-  .bg .text {
-    width: 90%;
-    margin-top: 0px;
-    margin: auto;
-  }
-  .bg .text h1 {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 28px;
-  }
-  .bg .text p {
-    margin-top: 12px;
-    font-size: 15px;
-  }
-  .bg .pic {
-    width: 90%;
-    margin: auto;
-    height: 70vh;
-  }
-  .bg .pic .logo img {
-    padding: 50% 0 0 0;
-    width: 50%;
-  }
-  .bg .pic .year {
+  .nav-top .nav-right {
     display: none;
   }
-  .group-card {
-    flex-direction: column;
-    margin-top: 48px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-top .nav-left img {
+    width: 60px;
+    height: 60px;
   }
-  .group-card .card {
-    width: 90%;
-  }
-  span a {
-    font-size: 18px;
-    margin-top: 30px;
-  }
-  .motivate .pic-motivate {
-    display: none;
-  }
-  .motivate .content-motivate {
-    width: 90%;
-    margin: auto;
-    padding: 0px 10px;
-  }
-  .motivate .content-motivate .header-motivate {
-    font-size: 28px;
-  }
-  .motivate .content-motivate .paragraph-motivate {
-    padding: 20px 0px;
-    font-size: 18px;
-  }
-  .bg-clinic {
-    flex-direction: column;
-  }
-  .bg-clinic .fact {
-    padding: 12px;
-  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   section {
     flex-direction: column;
     height: auto;
@@ -335,6 +259,9 @@ section .text4 .text-icon p {
   section .text3 .iconr-footer p {
     padding: 4px 0px 0px 4px;
   }
+  section .text2 {
+    margin-top: 28px;
+  }
   section .text1 {
     margin-top: 28px;
   }
@@ -346,14 +273,49 @@ section .text4 .text-icon p {
     margin-top: 0px;
     padding: 3px 0px;
   }
+  section .text4 {
+    margin: 38px 0px 38px 0px;
+  }
+  section .text4 .text-icon .text-icon1 img {
+    width: 30px;
+    height: 30px;
+  }
+  section .text4 .text-icon .text-icon1 p {
+    font-size: 15px;
+  }
 }
-/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  section .text3 h3 {
+    padding: 0px 0px 8px 0px;
+  }
+  section .text3 .iconr-footer {
+    padding: 6px 0px;
+  }
+  section .text3 .iconr-footer p {
+    padding: 4px 0px 0px 4px;
+  }
+  section .text4 {
+    margin: 38px 0px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 main {
   background-image: url(https://t3.ftcdn.net/jpg/06/31/48/64/240_F_631486438_ulkY2lKYk9ByyX64KJ6OrJZZqKz7Ef9C.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 80vh;
+  height: 90vh;
 }
 main .content {
   display: flex;
@@ -490,15 +452,12 @@ main .content .bt .bt2:hover {
 .group-card .card3 {
   background: #395BA9;
 }
-.group-card .card3 .monday {
-  padding: 15px 0px 0px 0px;
-}
 .group-card .card3 .day {
   display: flex;
   justify-content: space-between;
 }
 .group-card .card3 .day p {
-  padding: 20px 0px;
+  padding: 28px 0px 0px 0px;
   font-size: 12px;
   color: lightgray;
 }
@@ -620,4 +579,188 @@ span a:hover {
 .bg-clinic .fact .number {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  main {
+    height: auto;
+    background-attachment: fixed;
+  }
+  main .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .content .btn {
+    padding: 0px 20px 0px 30px;
+  }
+  main .content .btn #h2 {
+    font-size: 15px;
+  }
+  main .content .btn h1 {
+    font-size: 28px;
+    padding: 20px 0px;
+  }
+  main .content .btn p {
+    font-size: 15px;
+  }
+  main .content .btn .bt {
+    margin-bottom: 80px;
+  }
+  main .content .btn .bt .bt1, main .content .btn .bt .bt2 {
+    width: 100px;
+    font-size: 10px;
+    padding: 10px 5px;
+  }
+  main .content .btn .bt .bt2 {
+    margin-left: 10px;
+  }
+  .bg {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+  .bg .text {
+    width: 90%;
+    margin-top: 0px;
+    margin: auto;
+  }
+  .bg .text h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 28px;
+  }
+  .bg .text p {
+    margin-top: 12px;
+    font-size: 15px;
+  }
+  .bg .pic {
+    width: 90%;
+    margin: auto;
+    height: 70vh;
+  }
+  .bg .pic .logo img {
+    padding: 50% 0 0 0;
+    width: 50%;
+  }
+  .bg .pic .year {
+    display: none;
+  }
+  .group-card {
+    flex-direction: column;
+    margin-top: 48px;
+  }
+  .group-card .card {
+    width: 90%;
+  }
+  span a {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .motivate .pic-motivate {
+    display: none;
+  }
+  .motivate .content-motivate {
+    width: 90%;
+    margin: auto;
+    padding: 0px 10px;
+  }
+  .motivate .content-motivate .header-motivate {
+    font-size: 28px;
+  }
+  .motivate .content-motivate .paragraph-motivate {
+    padding: 20px 0px;
+    font-size: 20px;
+  }
+  .bg-clinic {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    height: 70vh;
+  }
+  main .content .btn {
+    padding: 0px 0px 0px 30px;
+  }
+  main .content .btn h1 {
+    font-size: 58px;
+  }
+  main .content .btn p {
+    width: 90%;
+  }
+  .bg {
+    flex-direction: column-reverse;
+  }
+  .bg .pic {
+    width: 90%;
+    margin: auto;
+    background-repeat: no-repeat;
+    height: 80vh;
+  }
+  .bg .pic .logo {
+    margin-top: 28px;
+  }
+  .bg .pic .year {
+    margin-top: 188px;
+  }
+  .bg .pic .year .card {
+    width: 40%;
+    padding: 12px;
+  }
+  .bg .pic .year .card h1 {
+    font-size: 80px;
+  }
+  .bg .text {
+    width: 90%;
+    margin: auto;
+    padding: 120px 0px 0px 0px;
+  }
+  .bg .text h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  .bg .text p {
+    text-align: center;
+    font-size: 26px;
+  }
+  .group-card {
+    flex-wrap: wrap;
+    margin-top: 68px;
+  }
+  .group-card .card {
+    width: 45%;
+    height: 35vh;
+  }
+  .group-card .card p {
+    font-size: 18px;
+  }
+  .group-card .card3 {
+    width: 90%;
+  }
+  .group-card .card3 .day p {
+    font-size: 18px;
+  }
+  .motivate {
+    flex-direction: column;
+    margin-top: 18px;
+  }
+  .motivate .pic-motivate {
+    display: none;
+  }
+  .motivate .content-motivate {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .motivate .content-motivate .header-motivate {
+    font-size: 50px;
+  }
+  .motivate .content-motivate .paragraph-motivate {
+    width: 85%;
+    margin: auto;
+    font-size: 28px;
+  }
 }

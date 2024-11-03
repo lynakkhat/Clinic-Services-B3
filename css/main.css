@@ -73,7 +73,7 @@ section .text3 {
 section .text3 h3 {
   color: #FFFFFF;
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 section .text3 .iconr-footer {
   display: flex;
@@ -81,7 +81,7 @@ section .text3 .iconr-footer {
 }
 section .text3 .iconr-footer p {
   color: #808080;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 6px 0px 0px 4px;
 }
 section .text3 .iconr-footer span {
@@ -102,7 +102,7 @@ section .text1 ul li {
 section .text1 ul li a {
   color: #808080;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 section .text1 ul li a:hover {
   color: #FFFFFF;
@@ -113,7 +113,7 @@ section .text2 {
 section .text2 h3 {
   color: #FFFFFF;
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0px 0px 8px 0px;
 }
 section .text2 ul li {
@@ -122,7 +122,7 @@ section .text2 ul li {
 section .text2 ul li a {
   color: #FFFFFF;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 24px;
   color: #808080;
 }
@@ -133,11 +133,10 @@ section .text4 {
   display: flex;
   justify-content: space-around;
   background: black;
-  margin-top: 82px;
+  margin-top: 118px;
 }
 section .text4 .text-icon {
   display: flex;
-  margin: 24px;
 }
 section .text4 .text-icon img {
   width: 30px;
@@ -145,7 +144,8 @@ section .text4 .text-icon img {
 }
 section .text4 .text-icon p {
   color: #808080;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  padding: 0px 38px 0px 0px;
 }
 
 .card-container {
@@ -211,6 +211,97 @@ section .text4 .text-icon p {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-top {
+    place-content: center;
+  }
+  .nav-top .nav-left img {
+    height: 50px;
+    margin-left: 0px;
+  }
+  .nav-top .nav-center .nav-center-dafualt li {
+    align-items: center;
+  }
+  .nav-top .nav-center .nav-center-dafualt li a {
+    font-size: 5px;
+    padding: 2px;
+  }
+  .nav-top .nav-right {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-top .nav-left img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  section {
+    flex-direction: column;
+    height: auto;
+    padding: 0px 0px 0px 32px;
+  }
+  section .text3 {
+    margin-top: 28px;
+  }
+  section .text3 h3 {
+    font-size: 22px;
+    padding: 8px 0px;
+  }
+  section .text3 .iconr-footer {
+    margin: 0;
+    padding: 6px 0px;
+  }
+  section .text3 .iconr-footer p {
+    padding: 4px 0px 0px 4px;
+  }
+  section .text2 {
+    margin-top: 28px;
+  }
+  section .text1 {
+    margin-top: 28px;
+  }
+  section .text1 h3 {
+    font-size: 22px;
+    padding: 0px 0px 8px 0px;
+  }
+  section .text1 a {
+    margin-top: 0px;
+    padding: 3px 0px;
+  }
+  section .text4 {
+    margin: 38px 0px 38px 0px;
+  }
+  section .text4 .text-icon .text-icon1 img {
+    width: 30px;
+    height: 30px;
+  }
+  section .text4 .text-icon .text-icon1 p {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  section .text3 h3 {
+    padding: 0px 0px 8px 0px;
+  }
+  section .text3 .iconr-footer {
+    padding: 6px 0px;
+  }
+  section .text3 .iconr-footer p {
+    padding: 4px 0px 0px 4px;
+  }
+  section .text4 {
+    margin: 38px 0px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
