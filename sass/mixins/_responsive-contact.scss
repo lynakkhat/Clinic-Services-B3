@@ -1,152 +1,90 @@
 @media only screen and (min-width:768px) and (max-width: 1024px) {
     main{
         flex-basis: 30%;
+        height: 70vh;
         .text{
-            flex-basis: 30%;
-            .content{
-                flex-basis: 30%;
-                h1{
-                    font-size: 60px;   
-                }
-                p{
-                    font-size: 30px;
-                }
-            }
-        }
-        .contact{
-            .box{
-                flex-basis: 100%;
-                h2{
-                    font-size: 50px;
-                }
-                p{
-                    font-size: 20px;
-                }
-
-            }
-            .ro{
-                label{
-                    font-size: 10px;
-                }
-                input{
-                    padding: 1px;
-                }
-        }
-
+            padding-top: 300px;
         }
     }
-    
+
     .card-group{
-        flex-basis:30%;
         flex-wrap: wrap;
+        gap: 30px;
         .card1{
-            width: 50px;
+            flex-basis:40%;
             height: 20vh;
-            flex-basis:30%;
-            flex-wrap: wrap;
-            .card{
-                flex-basis:30%;
-                flex-direction: column;
-            }
         }
     }
-    .card-group1{
-        flex-basis:30%;
-        .card2{
-            width: 38px;
+
+    aside {
+        margin-top: 128px;
+        .svar {
+            flex-basis: 40%;
             height: 18vh;
-            flex-basis:100%;
-            flex-direction: column;
+        }
+        .svar1 {
+            flex-basis: 84%;
         }
     }
+
     .medim{
         width: 100%;
         height: 0px;
 
     }
-
 }
+
 @media(min-width:320px) and (max-width: 767px){
     body{
         overflow-x: hidden;
     }
+
     main{
-        flex-basis: 100%;
         .text{
-            flex-basis: 100%;
-            .content{
-                flex-basis: 100%;
-                h1{
-                    font-size: 40px;   
-                }
-                p{
-                    font-size: 20px;
-                }
+            height: 50vh;
+            font-size: 18px;
+            padding-left: 28px;
+            p {
+                font-size: 18px;
             }
         }
-        .contact{
-            .box{
-                flex-basis: 100%;
-                h2{
-                    font-size: 40px;
-                }
-                p{
-                    font-size: 20px;
-                }
+    }
 
+    aside {
+        flex-direction: column;
+        .svar {
+            width: 80%;
+            margin: auto;
+            height: 18vh;
+            gap: 18px;
+            margin-top: 18px;
+            .icon {
+                height: 30px;
             }
-            .ro{
-                label{
-                    font-size: 10px;
-                }
-                input{
-                    padding: 8px;
-                }
-        }
-
+            p {
+                font-size: 15px;
+            }
         }
     }
     .card-group{
-        flex-wrap: wrap;
-        width: 100%;
-        .card1{
-            width: 40px;
-            height: 20vh;
-            flex-basis:100%;
-            flex-wrap: wrap;
-            .card{
-                flex-basis:100%;
-                flex-direction: column;
-
-            }
-        }
-    }
-    
-    .card-group1{
         flex-direction: column;
-        margin-top: 220px;
-        width: 100%;
-       
-        .card2{
-            flex-direction: column;
-            width: 100%;
+        margin: 0px;
+        gap: 20px;
+        .card1{
+            margin: auto;
+            width: 70%;
             height: 20vh;
-            flex-basis:100%;
-            .card{
-                flex-basis:100%;
-                flex-direction: column;
-            }
         }
     }
+
     .doctor-cards{
         flex-direction: column;
     }
 
     .medim{
         width: 100%;
-        height: 60vh;
-        font-size: 40px;
-
+        padding: 50px 0px 0px 0px;
+        font-size: 22px;
     }
 
 }
