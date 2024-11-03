@@ -8,17 +8,21 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
-  font-family: "Roboto", sans-serif;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .nav-top .nav-left img {
   height: 50px;
   margin-left: 38px;
 }
-.nav-top .nav-center {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
+nav .nav-top .nav-center {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .nav-top .nav-center .nav-center-default {
   display: flex;
@@ -46,7 +50,19 @@
   display: flex;
   align-items: center;
 }
-.nav-top .nav-right .apm a {
+nav .nav-top .nav-righ .nav-righ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .nav-top .nav-righ .nav-righ a {
   text-decoration: none;
   color: #01B2B7;
   font-weight: bold;
@@ -60,7 +76,8 @@
 
 section {
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: black;
   width: 100%;
   height: 48vh;
@@ -76,6 +93,8 @@ section .text3 h3 {
   font-family: "Roboto", sans-serif;
 }
 section .text3 .iconr-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 6px 0px;
 }
@@ -409,4 +428,29 @@ textarea {
 
 .submit:hover {
   background-color: #0070C0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .appointment-container {
+    padding: 20px 50px;
+    width: 350px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  #email {
+    width: 120px;
+  }
+  #date-time {
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .appointment-container {
+    padding: 30px 60px;
+    width: 550px;
+  }
+  .appointment-container .appointment-form .form-row .form-group label {
+    font-size: 22px;
+  }
 }

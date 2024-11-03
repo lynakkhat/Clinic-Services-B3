@@ -99,5 +99,4 @@ textarea {
 .submit:hover {
     background-color:$sub-color1;
 }
-
-
+@import "./mixins/responsive-set-appointment";

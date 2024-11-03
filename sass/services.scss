@@ -1,8 +1,6 @@
 @import "./main.scss";
-
 .services{
     @include centered;
-    // background-image: url(https://t3.ftcdn.net/jpg/02/21/02/54/240_F_221025436_cpiWyG8x12CJXHl2R7T6NxV3EjwfwEzP.jpg);
     background-image: url(https://t4.ftcdn.net/jpg/06/34/74/11/240_F_634741151_cyB4oyX7YB8bZlsmuHQKAu76bxnfse4a.jpg);
     background-position: center;
     background-size: cover;
@@ -38,6 +36,7 @@
 #Service {
     display: block;
     font-size: 18px;
+    font-family: $font-family;
     font-weight: bold;
     color: #0056b3;
     text-align: center;
@@ -60,6 +59,7 @@
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
+        font-family: $font-family;
         .card-of-service {
             width: 320px;
             background-color: #ffffff;
@@ -96,6 +96,7 @@
                         display: inline-block;
                         color: #0056b3;
                         font-size: 14px;
+                        font-family: $font-family;
                         font-weight: bold;
                         text-decoration: none;
                         padding: 10px 20px;
@@ -149,36 +150,4 @@
        right: 60px;
     }
 }
-
-@media only screen and (min-width: 320px) and (max-width: 800px){
-    .contant-service{
-        flex-direction: column;
-        .img-contant-service{
-          img{
-            display: none;
-          }
-        }
-        .text-contant-service{
-            h1{
-                font-size: 50px;
-            } 
-            p{
-                font-size: 12px;
-            }
-        }
-    }
-    .text-services{
-        font-size:20px ;
-    }
-    .services{
-        height: 50vh;
-        .service-text{
-            h1{
-                font-size: 40px;
-            }
-            h3{
-                font-size: 24px;
-            }
-        }
-    }
-  }
+@import "./mixins/-responsive-service.scss";

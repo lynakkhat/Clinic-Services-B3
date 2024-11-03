@@ -60,7 +60,8 @@
 
 section {
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: black;
   width: 100%;
   height: 48vh;
@@ -76,6 +77,8 @@ section .text3 h3 {
   font-family: "Roboto", sans-serif;
 }
 section .text3 .iconr-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 6px 0px;
 }
@@ -131,7 +134,8 @@ section .text2 ul li a:hover {
 }
 section .text4 {
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: black;
   margin-top: 118px;
 }

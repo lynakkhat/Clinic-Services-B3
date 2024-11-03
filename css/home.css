@@ -60,7 +60,8 @@
 
 section {
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: black;
   width: 100%;
   height: 48vh;
@@ -76,6 +77,8 @@ section .text3 h3 {
   font-family: "Roboto", sans-serif;
 }
 section .text3 .iconr-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 6px 0px;
 }
@@ -131,7 +134,8 @@ section .text2 ul li a:hover {
 }
 section .text4 {
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: black;
   margin-top: 118px;
 }
@@ -587,9 +591,15 @@ span a:hover {
     background-attachment: fixed;
   }
   main .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main .content .btn {
     padding: 0px 20px 0px 30px;
@@ -616,7 +626,10 @@ span a:hover {
     margin-left: 10px;
   }
   .bg {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     margin-top: 40px;
   }
   .bg .text {
@@ -646,7 +659,10 @@ span a:hover {
     display: none;
   }
   .group-card {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 48px;
   }
   .group-card .card {

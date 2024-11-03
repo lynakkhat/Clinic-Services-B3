@@ -60,7 +60,8 @@
 
 section {
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: black;
   width: 100%;
   height: 48vh;
@@ -76,6 +77,8 @@ section .text3 h3 {
   font-family: "Roboto", sans-serif;
 }
 section .text3 .iconr-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 6px 0px;
 }
@@ -131,7 +134,8 @@ section .text2 ul li a:hover {
 }
 section .text4 {
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: black;
   margin-top: 118px;
 }
@@ -384,10 +388,17 @@ section .text4 .text-icon p {
 }
 
 .doctor-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: auto;
   gap: 20px;
   padding: 20px;
@@ -399,16 +410,28 @@ section .text4 .text-icon p {
   background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   text-align: center;
   height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .card-doctor:hover {
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 .card-doctor img {
   width: 100%;
@@ -420,12 +443,20 @@ section .text4 .text-icon p {
 .card-doctor .card-content {
   background-color: #ffffff;
   color: #333;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   height: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .card-doctor .card-content h3 {
   font-size: 1.4em;
@@ -442,13 +473,16 @@ section .text4 .text-icon p {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   main {
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
   main .text {
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
   main .text .content {
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
   main .text .content h1 {
     font-size: 14px;
@@ -457,7 +491,8 @@ section .text4 .text-icon p {
     font-size: 10px;
   }
   main .contact .box {
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
   main .contact .box h2 {
     font-size: 18px;
@@ -481,12 +516,13 @@ section .text4 .text-icon p {
 }
 main .text {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  font-size: 25px;
-  text-align: center;
-  background-image: url(https://marvel-b1-cdn.bc0a.com/f00000000293897/www.scphealth.com/wp-content/uploads/2021/12/news_image.jpg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(https://www.pacificprime.lat/blog/wp-content/uploads/2021/08/Health-insurance-1138x493.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -599,132 +635,4 @@ aside .svar .icon {
 .map iframe {
   width: 100%;
   margin-top: 12px;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  main {
-    flex-basis: 30%;
-  }
-  main .text {
-    flex-basis: 30%;
-  }
-  main .text .content {
-    flex-basis: 30%;
-  }
-  main .text .content h1 {
-    font-size: 24px;
-  }
-  main .text .content p {
-    font-size: 10px;
-  }
-  main .contact .box {
-    flex-basis: 30%;
-  }
-  main .contact .box h2 {
-    font-size: 30px;
-  }
-  main .contact .box p {
-    font-size: 12px;
-  }
-  main .contact .ro label {
-    font-size: 10px;
-  }
-  main .contact .ro input {
-    padding: 8px;
-  }
-  .card-group {
-    flex-basis: 30%;
-    flex-wrap: wrap;
-  }
-  .card-group .card1 {
-    width: 50px;
-    height: 30vh;
-    flex-basis: 30%;
-    flex-wrap: wrap;
-  }
-  .card-group .card1 .card {
-    flex-basis: 30%;
-    flex-direction: column;
-  }
-  .card-group1 {
-    flex-basis: 30%;
-  }
-  .card-group1 .card2 {
-    width: 50px;
-    height: 30vh;
-    flex-basis: 30%;
-    flex-direction: column;
-  }
-  section {
-    display: flex;
-    justify-content: space-around;
-    background: #15063F;
-    width: 100%;
-    height: 40vh;
-    margin-top: 58px;
-    margin-bottom: 58px;
-  }
-  section .text3 {
-    margin-top: 62px;
-  }
-  section .text3 .iconr-footer {
-    display: flex;
-    margin: 12px;
-  }
-  section .text3 .iconr-footer p {
-    color: #FFFFFF;
-    font-family: sans-serif;
-    font-size: 12px;
-  }
-  section .text3 .iconr-footer span {
-    font-size: 12px;
-    color: #FFFFFF;
-  }
-  section .text1 {
-    margin-top: 62px;
-  }
-  section .text1 h3 {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-family: sans-serif;
-  }
-  section .text1 a {
-    color: #FFFFFF;
-    font-size: 12px;
-    font-family: sans-serif;
-    margin-top: 24px;
-  }
-  section .text2 {
-    margin-top: 62px;
-  }
-  section .text2 h3 {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-family: sans-serif;
-  }
-  section .text2 a {
-    color: #FFFFFF;
-    font-size: 12px;
-    font-family: sans-serif;
-    margin-top: 24px;
-  }
-  section .text4 {
-    display: flex;
-    justify-content: space-around;
-    background: #15063F;
-    margin-top: 82px;
-  }
-  section .text4 .text-icon {
-    display: flex;
-    margin: 12px;
-  }
-  section .text4 .text-icon img {
-    width: 20px;
-    height: 20px;
-  }
-  section .text4 .text-icon p {
-    color: #FFFFFF;
-    font-family: sans-serif;
-    font-size: 14px;
-  }
 }
