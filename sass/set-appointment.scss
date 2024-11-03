@@ -98,33 +98,4 @@ textarea {
 .submit:hover {
     background-color:$sub-color1;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px){
-    .appointment-container{
-        padding: 20px 50px;
-        width: 350px;
-    }
-    body{
-        overflow-x: hidden;
-    }
-    #email{
-        width: 120px;
-    }
-    #date-time{
-        width: 120px;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .appointment-container{
-        padding: 30px 60px;
-        width: 550px;
-        .appointment-form{
-            .form-row{
-               .form-group{
-                    label{
-                        font-size: 22px;
-                    }
-                } 
-            }  
-        }
-    }
-}
+@import "./mixins/responsive-set-appointment";

@@ -496,10 +496,10 @@ section .text4 .text-icon p {
     display: none;
   }
   .contant-service .text-contant-service h1 {
-    font-size: 50px;
+    font-size: 38px;
   }
   .contant-service .text-contant-service p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .text-services h2 {
     font-size: 26px;
@@ -526,7 +526,7 @@ section .text4 .text-icon p {
     font-size: 40px;
   }
   .text-contant-service p {
-    font-size: 21px;
+    font-size: 22px;
   }
   .text-contant-service span a {
     font-size: 30px;
@@ -542,7 +542,7 @@ section .text4 .text-icon p {
     color: #fff;
   }
   .services .service-text p {
-    font-size: 44px;
+    font-size: 40px;
   }
   .text-services {
     font-size: 30px;
