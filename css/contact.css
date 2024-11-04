@@ -350,6 +350,9 @@ section .text4 .text-icon p {
 .card-group .card1 .card .btn-card a {
   color: #FFFFFF;
 }
+.card-group .card1 .card .btn-card:hover {
+  background-color: teal;
+}
 
 .doctor-cards {
   display: flex;
