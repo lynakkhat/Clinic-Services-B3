@@ -1,9 +1,11 @@
 @media only screen and (min-width:768px) and (max-width: 1024px) {
     main{
         flex-basis: 30%;
-        height: 70vh;
         .text{
-            padding-top: 300px;
+            background-image: none;
+            background-color: #B9D0DD;
+            padding-top: 180px;
+            height: 55vh;
         }
     }
 
@@ -17,7 +19,7 @@
     }
 
     aside {
-        margin-top: 128px;
+        margin-top: 50px;
         .svar {
             flex-basis: 40%;
             height: 18vh;

@@ -223,11 +223,13 @@ section .text4 .text-icon p {
     height: 50px;
     margin-left: 0px;
   }
+  .nav-top .nav-center {
+    font-size: 12px;
+  }
   .nav-top .nav-center .nav-center-dafualt li {
     align-items: center;
   }
   .nav-top .nav-center .nav-center-dafualt li a {
-    font-size: 5px;
     padding: 2px;
   }
   .nav-top .nav-right {
@@ -235,6 +237,9 @@ section .text4 .text-icon p {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-top {
+    font-size: 18px;
+  }
   .nav-top .nav-left img {
     width: 60px;
     height: 60px;
@@ -327,6 +332,7 @@ section .text4 .text-icon p {
   background: #f0f8ff;
   border-radius: 12px;
   transition: transform 0.3s;
+  font-family: "Roboto", sans-serif;
 }
 .card-group .card1:hover {
   transform: translateY(-10px);
@@ -414,10 +420,12 @@ section .text4 .text-icon p {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   main {
     flex-basis: 30%;
-    height: 70vh;
   }
   main .text {
-    padding-top: 300px;
+    background-image: none;
+    background-color: #B9D0DD;
+    padding-top: 180px;
+    height: 55vh;
   }
   .card-group {
     flex-wrap: wrap;
@@ -428,7 +436,7 @@ section .text4 .text-icon p {
     height: 20vh;
   }
   aside {
-    margin-top: 128px;
+    margin-top: 50px;
   }
   aside .svar {
     flex-basis: 40%;
@@ -598,10 +606,12 @@ aside .svar p {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   main {
     flex-basis: 30%;
-    height: 70vh;
   }
   main .text {
-    padding-top: 300px;
+    background-image: none;
+    background-color: #B9D0DD;
+    padding-top: 180px;
+    height: 55vh;
   }
   .card-group {
     flex-wrap: wrap;
@@ -612,7 +622,7 @@ aside .svar p {
     height: 20vh;
   }
   aside {
-    margin-top: 128px;
+    margin-top: 50px;
   }
   aside .svar {
     flex-basis: 40%;

@@ -12,11 +12,11 @@
             }
         }
         .nav-center {
+            font-size: 12px;
             .nav-center-dafualt {
                 li {
                     align-items: center;
                     a {
-                        font-size: 5px;
                         padding: 2px;
                     }
                 }
@@ -32,6 +32,7 @@
 // Tablet Navba
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .nav-top {
+        font-size: $font-size;
         .nav-left {
             img {
                 width: 60px;
